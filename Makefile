@@ -16,4 +16,4 @@ bindings-gen-ts: forge-build
 	echo "Done."
 
 dist:
-	npm run build
+	bun run build

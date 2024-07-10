@@ -10,6 +10,6 @@ pkgs.mkShell {
   packages = [
     pkgs.gnumake
     pkgs.foundry-bin
-    pkgs.nodejs
+    pkgs.bun
   ];
 }

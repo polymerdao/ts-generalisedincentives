@@ -1,0 +1,7 @@
+- name: IncentivizedPolymerEscrow
+  description: 'IncentivizedPolymerEscrow'
+  factoryName: 'IncentivizedPolymerEscrow'
+  deployArgs:
+    - '{{Dispatcher}}' # sendLostGasTo
+    - '{{Dispatcher}}'
+  deployer: 'KEY_POLYMER'

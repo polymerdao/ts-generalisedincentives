@@ -1,4 +1,6 @@
 {
+  "name": "generalisedincentives",
+  "version": "0.1.2",
   "dependencies": {
     "@typechain/ethers-v6": "^0.5.1",
     "typechain": "^8.3.2"
@@ -10,21 +12,16 @@
   "author": "Polymer Labs",
   "type": "module",
   "exports": {
-    "./contracts": {
-      "require": "./dist/evm/contracts/index.js",
-      "import": "./dist/evm/contracts/index.js",
-      "types": "./dist/evm/contracts/d.ts"
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     },
-    "./contracts/*": {
-      "require": "./dist/evm/contracts/*.js",
-      "import": "./dist/evm/contracts/*.js",
-      "types": "./dist/evm/contracts/*.d.ts"
-    }
   },
   "devDependencies": {
     "tsup": "^8.1.0"
   },
   "scripts": {
-    "build": "tsup src/"
+    "build": "tsup"
   }
 }

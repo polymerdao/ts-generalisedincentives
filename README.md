@@ -1,7 +1,7 @@
 ## Setup
 
-1. Install nodejs
-2. Install dependencies with `npm install`
+1. Install bun
+2. Install dependencies with `bun install`
 
 ## Generate typescript bindings
 
