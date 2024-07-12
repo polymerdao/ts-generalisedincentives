@@ -1,5 +1,5 @@
 import { BytesLike, BigNumberish, AddressLike, Interface, FunctionFragment, EventFragment, Result, BaseContract, ContractRunner, Listener, ContractMethod } from 'ethers';
-import { TypedContractEvent, TypedDeferredTopicFilter, TypedEventLog, TypedLogDescription, TypedListener, TypedContractMethod } from './common.cjs';
+import { TypedContractEvent, TypedDeferredTopicFilter, TypedEventLog, TypedLogDescription, TypedListener, TypedContractMethod } from '../common.cjs';
 
 type IbcEndpointStruct = {
     portId: string;

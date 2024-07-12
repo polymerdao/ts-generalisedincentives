@@ -7,6 +7,7 @@ forge-build:
 
 CONTRACT_JSON_FILES = \
 	./GeneralisedIncentives/out/vIBCEscrow.sol/IncentivizedPolymerEscrow.json \
+	./GeneralisedIncentives/out/SimpleApplication.sol/SimpleApplication.json \
 
 .PHONY: bindings-gen-ts
 bindings-gen-ts: forge-build
@@ -15,5 +16,5 @@ bindings-gen-ts: forge-build
 	npx typechain --target ethers-v6 --out-dir ./src/evm/contracts $(CONTRACT_JSON_FILES); \
 	echo "Done."
 
-dist:
+dist: bindings-gen-ts
 	bun run build

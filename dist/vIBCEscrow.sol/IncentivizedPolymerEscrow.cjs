@@ -13,7 +13,7 @@ var __copyProps = (to, from, except, desc) => {
 };
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
-// src/evm/contracts/IncentivizedPolymerEscrow.ts
+// src/evm/contracts/vIBCEscrow.sol/IncentivizedPolymerEscrow.ts
 var IncentivizedPolymerEscrow_exports = {};
 module.exports = __toCommonJS(IncentivizedPolymerEscrow_exports);
 //# sourceMappingURL=IncentivizedPolymerEscrow.cjs.map

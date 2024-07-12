@@ -18,6 +18,11 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "./vIBCEscrow.sol": {
+      "require": "./dist/evm/contracts/vIBCEscrow.sol/index.js",
+      "import": "./dist/evm/contracts/vIBCEscrow.sol/index.js",
+      "types": "./dist/evm/contracts/vIBCEscrow.sol/index.d.ts"
+  },
   "devDependencies": {
     "tsup": "^8.1.0"
   },
