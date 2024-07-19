@@ -3,5 +3,12 @@
   factoryName: 'IncentivizedPolymerEscrow'
   deployArgs:
     - '{{Dispatcher}}' # sendLostGasTo
-    - '{{Dispatcher}}'
+    - '{{DispatcherProxy}}'
+  deployer: 'KEY_POLYMER'
+
+- name: SimpleApplication
+  description: 'SimpleApplication'
+  factoryName: 'SimpleApplication'
+  deployArgs:
+    - '{{IncentivizedPolymerEscrow}}'
   deployer: 'KEY_POLYMER'
